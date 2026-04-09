@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -39,30 +39,75 @@
             </li>
           </ul>
         </nav>
-        <address class="header-media">
-          <ul class="header-media-list">
-            <li class="header-media-item">
-              <a class="header-media-link" href="">
-                <svg class="header-media-icon" width="24" height="24">
-                  <use href="./images/icon.svg#icon-instagram"></use>
+        <nav class="header-nav-icons">
+          <ul class="header-nav-icons-list">
+            <li class="header-nav-icons-item">
+              <a class="header-nav-icon-link" href="#hero" title="Home">
+                <svg
+                  class="header-nav-icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  ></path>
+                  <polyline points="9,22 9,12 15,12 15,22"></polyline>
                 </svg>
               </a>
             </li>
-            <li class="header-media-item">
-              <a class="header-media-link" href="">
-                <svg class="header-media-icon" width="24" height="24">
-                  <use href="./images/icon.svg#icon-twitter"></use>
+            <li class="header-nav-icons-item">
+              <a
+                class="header-nav-icon-link"
+                href="#made"
+                title="How it's made"
+              >
+                <svg
+                  class="header-nav-icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10,8 16,12 10,16 10,8"></polygon>
+                </svg>
+              </a>
+            </li>
+            <li class="header-nav-icons-item">
+              <a
+                class="header-nav-icon-link"
+                href="#review"
+                title="Chocolate is loved"
+              >
+                <svg
+                  class="header-nav-icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  ></path>
                 </svg>
               </a>
             </li>
           </ul>
-        </address>
+        </nav>
       </div>
     </header>
     <!--Main-->
     <main>
       <!--Hero section-->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container container-narrow">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -83,40 +128,33 @@
           <h2 class="features-title hidden">Features</h2>
           <ul class="features-list">
             <li class="features-item">
-              <svg class="features-icon" width="28" height="28">
+              <svg class="features-icon" width="32" height="32">
                 <use href="./images/icon.svg#icon-chocolate-bar"></use>
               </svg>
-              <h3 class="features-subtitle">Unsurpassed taste</h3>
+              <h3 class="features-subtitle">Premium Quality</h3>
               <p class="features-text">
-                Crafted with the finest quality cocoa beans and a dedication to
-                perfection, each bite is a decadent experience that simply
-                cannot be matched. Savor the richness and complexity of our
-                Unsurpassed Taste and discover a new level of chocolate bliss.
+                Finest cocoa beans, crafted to perfection for an unmatched
+                chocolate experience.
               </p>
             </li>
             <li class="features-item">
-              <svg class="features-icon" width="28" height="28">
+              <svg class="features-icon" width="32" height="32">
                 <use href="./images/icon.svg#icon-Coin"></use>
               </svg>
-              <h3 class="features-subtitle">Affordable price</h3>
+              <h3 class="features-subtitle">Affordable Luxury</h3>
               <p class="features-text">
-                Indulge in high-quality chocolate without breaking the bank with
-                Simply Chocolate's selection of affordable treats. Enjoy
-                mouth-watering truffles and velvety chocolate bars without
-                sacrificing taste or quality. Browse our selection and indulge
-                in affordable luxury today.
+                High-quality chocolate that won't break the bank. Luxury within
+                reach.
               </p>
             </li>
             <li class="features-item">
-              <svg class="features-icon" width="28" height="28">
+              <svg class="features-icon" width="32" height="32">
                 <use href="./images/icon.svg#icon-spoon"></use>
               </svg>
-              <h3 class="features-subtitle">Own production</h3>
+              <h3 class="features-subtitle">Artisan Made</h3>
               <p class="features-text">
-                We take pride in our own production process, ensuring that every
-                step is carefully crafted to perfection. From selecting the
-                finest ingredients to handcrafting each piece, our attention to
-                detail is evident in every bite.
+                Handcrafted in our own production facility with meticulous
+                attention to detail.
               </p>
             </li>
           </ul>
@@ -180,7 +218,7 @@
         </div>
       </section>
       <!--Made section-->
-      <section class="made">
+      <section class="made" id="made">
         <div class="container">
           <h2 class="made-title">
             hOW IT’S <span class="made-title-orange">made?</span>
@@ -235,7 +273,7 @@
         </div>
       </section>
       <!--Review section-->
-      <section class="review">
+      <section class="review" id="review">
         <div class="container">
           <h2 class="review-title">
             <span class="review-title-orange">chocolate</span> is loved
@@ -286,9 +324,35 @@
               </div>
             </li>
           </ul>
-          <button class="review-button" type="button">Leave a review</button>
+          <button class="review-button" type="button" id="leaveReviewBtn">
+            Leave a review
+          </button>
         </div>
       </section>
+
+      <!-- Review Modal -->
+      <div id="reviewModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2>Share Your Experience</h2>
+          <form id="reviewForm">
+            <div class="form-group">
+              <label for="reviewerName">Your Name</label>
+              <input type="text" id="reviewerName" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="reviewText">Your Review</label>
+              <textarea
+                id="reviewText"
+                name="review"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Review</button>
+          </form>
+        </div>
+      </div>
     </main>
     <!--Footer-->
     <footer class="footer">
@@ -301,13 +365,15 @@
           <nav class="footer-navigation" aria-label="Footer Navigation">
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
-                <a class="footer-menu-link" href="#">Home</a>
+                <a class="footer-menu-link" href="#hero">Home</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-menu-link" href="#">How it's made?</a>
+                <a class="footer-menu-link" href="#made">How it's made?</a>
               </li>
               <li class="footer-nav-item">
-                <a class="footer-menu-link" href="#">Chocolate is loved</a>
+                <a class="footer-menu-link" href="#review"
+                  >Chocolate is loved</a
+                >
               </li>
             </ul>
           </nav>
@@ -330,4 +396,5 @@
       </div>
     </footer>
   </body>
+  <script src="./js/script.js"></script>
 </html>
